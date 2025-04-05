@@ -15,7 +15,7 @@ local mocha = {
    sapphire  = '#74c7ec',
    blue      = '#89b4fa',
    lavender  = '#b4befe',
-   text      = '#cdd6f4',
+   text      = '#cacaca',
    subtext1  = '#bac2de',
    subtext0  = '#a6adc8',
    overlay2  = '#9399b2',
@@ -24,7 +24,7 @@ local mocha = {
    surface2  = '#585b70',
    surface1  = '#45475a',
    surface0  = '#313244',
-   base      = '#1f1f28',
+   base      = '#171717',
    mantle    = '#181825',
    crust     = '#11111b',
 }
@@ -38,24 +38,24 @@ local colorscheme = {
    selection_bg = mocha.surface2,
    selection_fg = mocha.text,
    ansi = {
-      '#0C0C0C', -- black
-      '#C50F1F', -- red
-      '#13A10E', -- green
-      '#C19C00', -- yellow
-      '#0037DA', -- blue
-      '#881798', -- magenta/purple
-      '#3A96DD', -- cyan
-      '#CCCCCC', -- white
+      '#000000', -- black
+      '#FF615A', -- red
+      '#B1E969', -- green
+      '#EBD99C', -- yellow
+      '#5DA9F6', -- blue
+      '#E86AFF', -- magenta/purple
+      '#82FFF7', -- cyan
+      '#DEDACF', -- white
    },
    brights = {
-      '#767676', -- black
-      '#E74856', -- red
-      '#16C60C', -- green
-      '#F9F1A5', -- yellow
-      '#3B78FF', -- blue
-      '#B4009E', -- magenta/purple
-      '#61D6D6', -- cyan
-      '#F2F2F2', -- white
+      '#313131', -- black
+      '#F58C80', -- red
+      '#DDF88F', -- green
+      '#EEE5B2', -- yellow
+      '#A5C7FF', -- blue
+      '#DDAAFF', -- magenta/purple
+      '#B7FFF9', -- cyan
+      '#FFFFFF', -- white
    },
    tab_bar = {
       background = 'rgba(0, 0, 0, 0.4)',
