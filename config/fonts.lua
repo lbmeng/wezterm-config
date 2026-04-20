@@ -2,6 +2,9 @@ local wezterm = require('wezterm')
 local platform = require('utils.platform')
 
 local font_family = 'Liberation Mono'
+if platform.is_win then
+   font_family = 'Consolas'
+end
 
 return {
    font = wezterm.font({
