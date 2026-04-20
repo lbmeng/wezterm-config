@@ -1,3 +1,4 @@
+local wezterm = require('wezterm')
 local platform = require('utils.platform')
 
 local options = {
@@ -11,6 +12,14 @@ if platform.is_win then
       { label = 'PowerShell', args = { 'powershell' } },
       { label = 'Command Prompt', args = { 'cmd' } },
    }
+
+   -- Add SSH hosts from ~/.ssh/config
+   for host, _ in pairs(wezterm.enumerate_ssh_hosts()) do
+      table.insert(options.launch_menu, {
+         label = 'SSH: ' .. host,
+         args = { 'ssh', host },
+      })
+   end
 elseif platform.is_mac then
    options.default_prog = { '/opt/homebrew/bin/fish', '-l' }
    options.launch_menu = {
